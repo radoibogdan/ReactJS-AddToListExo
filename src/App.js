@@ -12,10 +12,12 @@ function App() {
   }
 
   return (
-    <div>
+    // Use Fragment or <> to not be forced to use DIV wrapper
+    // Can replace with <React.Fragment></React.Fragment>
+    <>
       <AddUser onAddUser={userAddedHandler}/>
       <UsersList users={usersList}/>
-    </div>
+    </>
   );
 }
 
